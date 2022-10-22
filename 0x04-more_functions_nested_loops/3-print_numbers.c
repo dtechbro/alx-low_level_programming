@@ -1,7 +1,9 @@
 #include "main.h"
 
 
-/* print_numbers - prints number */
+/**
+ *  print_numbers - prints number
+ */
 
 
 
