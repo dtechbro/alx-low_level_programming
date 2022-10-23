@@ -13,10 +13,10 @@ int main(void)
 	char d;
 
 
-	for (c = a, c <= z, c++)
+	for (c = "a", c <= "z", c++)
 		putchar(c);
 
-	for (d = A, d <= Z, d++)
+	for (d = "A", d <= "Z", d++)
 		putchar(d);
 
 	putchar("\n");
