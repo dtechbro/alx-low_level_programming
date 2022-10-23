@@ -2,18 +2,18 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0
+ * author: men
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char me;
+	char men;
 
-	for (me = 'a'  me <= 'z' , me++;)
+	for (men = 'a'; men <= 'z'; men++)
 	{
-		if (me != 'q' && me != 'e')
-		putchar(me);
+		if (men != 'q' && men != 'e')
+			putchar(men);
 	}
-	putchar('/n');
+	putchar('\n');
 	return (0);
 }
