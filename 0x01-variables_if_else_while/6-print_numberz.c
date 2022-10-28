@@ -2,14 +2,14 @@
 
 /**
  * main - Entry point
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	int sammy;
 
-	for (i = 32; i < 42; i++)
-		putchar(i);
+	for (sammy = 48; sammy < 58; sammy++)
+		putchar(sammy);
 	putchar('\n');
 	return (0);
 }
