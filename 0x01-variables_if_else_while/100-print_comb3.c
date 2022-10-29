@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - compilation start from main
+ * Return: 0 on success
  */
 
 int main(void)
@@ -13,7 +14,7 @@ int main(void)
 	{
 		for (j = 49; j < 10; j++)
 		{
-			if (i != j && i > j)
+			if (i != j && j > i)
 			{
 				putchar(i);
 				putchar(j);
