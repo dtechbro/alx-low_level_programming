@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
- * main - main funct
+ * main - print addition of positive numbers
  * @argc: counts argument
  * @argv: Argument
  * Return: int
