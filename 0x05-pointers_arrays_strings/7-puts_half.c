@@ -5,6 +5,7 @@
  * @str: pointer parameter
  * Author: sammykingx
  */
+
 void puts_half(char *str)
 {
 	int count = 0, i;
