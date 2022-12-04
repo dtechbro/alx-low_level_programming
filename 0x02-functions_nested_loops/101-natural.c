@@ -12,9 +12,9 @@ int main(void)
   for (a = 0; a < 1024; a++)
   {
     if ((a % 5) == 0 || (a % 3) == 0)
-			sum += i;
+			b += a;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", b);
 
 	return (0);
 }
