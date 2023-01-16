@@ -1,25 +1,17 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int a = 1;
-	int b = 2;
-	int sum = 0;
+int main() {
+    int a = 1, b = 2, c, sum = 0;
 
-	while (b <= 4000000)
-	{
-		if (b % 2 == 0)
-		{
-			sum += b;
-		}
+    while (b <= 4000000) {
+        if (b % 2 == 0) {
+            sum += b;
+        }
+        c = a + b;
+        a = b;
+        b = c;
+    }
 
-
-		int c = a + b;
-
-		a = b;
-		b = c;
-	}
-
-	printf("%d\n", sum);
-	return (0);
+    printf("%d\n", sum);
+    return 0;
 }
