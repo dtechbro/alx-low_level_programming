@@ -1,40 +1,28 @@
 #include <stdio.h>
 
 /**
- * fibonacci - calculate the n-th Fibonacci number
- * @n: the index of the Fibonacci number to calculate
+ * main - Prints the add of the even-valued
+ * fibonacci numbers.
  *
- * Return: the n-th Fibonacci number
+ * Return: Always 0.
  */
-unsigned long fibonacci(int n)
-{
-    if (n <= 0)
-        return 0;
-    else if (n == 1)
-        return 1;
-    else
-        return fibonacci(n - 1) + fibonacci(n - 2);
-}
-
 int main(void)
 {
-    unsigned long sum = 0;
-    int i = 1;
+	long int n1, n2, fn, afn;
 
-    while (1)
-    {
-        unsigned long fib = fibonacci(i);
-
-        if (fib > 4000000)
-            break;
-
-        if (fib % 2 == 0)
-            sum += fib;
-
-        i++;
-    }
-
-    printf("%lu\n", sum);
-
-    return (0);
+	n1 = 1;
+	n2 = 2;
+	fn = afn = 0;
+	while (fn <= 4000000)
+	{
+		fn = n1 + n2;
+		n1 = n2;
+		n2 = fn;
+		if ((n1 % 2) == 0)
+		{
+			afn += n1;
+		}
+	}
+	printf("%ld\n", afn);
+	return (0);
 }
