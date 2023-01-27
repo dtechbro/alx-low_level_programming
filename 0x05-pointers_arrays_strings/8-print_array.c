@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_array - this function prints n elements of an array of integers.
- * @a: pointer parameter
- * @n: integer variable
- * Author: sammykingx
+ * print_array - prints n elements of an array of integers.
+ * @a: input array.
+ * @n: input n elements
+ * Return: no return.
  */
 void print_array(int *a, int n)
 {
@@ -12,9 +13,9 @@ void print_array(int *a, int n)
 
 	for (; i < n; i++)
 	{
-		("%d", *(a + i));
+		printf("%d", *(a + i));
 		if (i != (n - 1))
-			_putchar(", ");
+			printf(", ");
 	}
-	_putchar("\n");
+	printf("\n");
 }
